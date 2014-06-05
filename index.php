@@ -48,7 +48,7 @@
 		
 	</div>
 	<div id="menu">
-	  <div class="logo"><img src="http://www.placehold.it/900x150"></div>
+	  <div id="logo"><img src="http://www.placehold.it/900x150"></div>
 	  <ul class="kontinenti">
 	    <li><img width="180" height="180" data-kontinent="europe" src="img/europe.png"></li>
 	    <li><img class="unavailable" width="180" height="180" data-kontinent="asia2" src="img/asia.png"></li>
