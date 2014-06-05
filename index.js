@@ -239,7 +239,7 @@ function game(limit) {
     };
 
     this.end = function() {
-        $("#menu").fadeIn();
+        $('#gameover').fadeIn();
     };
 
     this.check = function(id) {
@@ -344,6 +344,7 @@ function game(limit) {
         }
         var percent = Math.round(this.score / this.limit * 100);
         $("#score").html(percent + "%");
+        $("#gameover .score").html(percent + "%");
     };
 }
 

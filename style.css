@@ -113,19 +113,11 @@ body {
 #menu_btn {
   cursor: pointer;
   z-index: 100;
-  background: #FFF;
   position: absolute;
   top: 665px;
-  left: 10px;
-  width: 100px;
-  font-family: 'Sanchez', sans-serif;
-  font-size:20px;
-  font-size:2rem;
-  text-align: center;
-  border: 1px solid black;
-  border-radius: 7px;
-  -webkit-box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.6);
-  box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.6);
+  left: 0;
+  width: 60px;
+
 }
 
 
@@ -225,4 +217,29 @@ path:hover{
 
 li.clicked{
   opacity: 0.6;
+}
+
+.btn{
+  color: rgba(255,255,255,1);
+  text-decoration: none;
+  background-color: #45629E;
+  font-family: 'Sanchez', serif;
+  font-size: 1.5rem;
+  display: inline-block;
+  padding: 4px;
+  margin:4px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  width: 60px;
+  text-align: center;
+  border:none;
+  cursor:pointer;
+}
+.btn:hover{
+  background: #344C7C;
+}
+.btn:active {
+    position: relative;
+    top: 1px;
 }

@@ -11,19 +11,38 @@
     <link rel="stylesheet" href="modal.css" media="all" type="text/css" />
     <script src='jquery.js'></script>
 	<script src="index.js"></script>
+	<script>
+		//Fixing stupid facebook share button problem
+		setTimeout(function(){
+			$('#gameover').css({
+			    'visibility': "visible",
+			    'z-index': "300",
+			    "display" : "none"
+			});
+		},8000);
+	</script>
 </head>
 
 <body>
-
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=661790753870539&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <div id="game">
-	<div id="gameover" class="modal">
+	<div id="gameover">
 		<p>Osvojio si</p>
 		<p class='score'>70%</p>
 		<span class="share" style="text-align:center;display:block;width:100%;">
-			<button class="modalbtn">share</button>
+			<div class="fb-share-button" data-href="https://apps.facebook.com/661790753870539/" data-type="button"></div>
 		</span>
-		<br>
-		<button class="modalbtn">cao</button><button class="modalbtn">cao</button>
+		<footer>
+			<div class="btn">Menu</div><div class="btn" style="float:right;">Replay</div>
+		</footer>
+		
 	</div>
 	<div id="menu">
 	  <div class="logo"><img src="http://www.placehold.it/900x150"></div>
@@ -59,7 +78,7 @@
 		</div>		
 	</div>
 
-	<div id="menu_btn">Menu</div>
+	<div id="menu_btn" class="btn">Menu</div>
 </div>
 </body>
 
