@@ -192,6 +192,10 @@ $(document).ready(function() {
     $("#menu_btn").click(function() {
         $("#menu").fadeIn();
     });
+    $("#modal_menu_btn").click(function() {
+        $("#menu").fadeIn();
+        $('#gameover').fadeOut();
+    });
 
     $(".kontinenti img").click(function() {
         if($(this).hasClass('unavailable')){
@@ -208,6 +212,7 @@ function game(limit) {
     this.type='country'; //default is to play with countries
     this.score = 0;
     this.left = limit; //how many countries left
+    this.timer=new Date();
     this.start = function(continent) {
         this.clearup(); //Clear things from previous start
         current_continent = continent;
