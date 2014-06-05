@@ -1,9 +1,4 @@
-@font-face {
-  font-family: "Sanchez";
-  font-style: normal;
-  font-weight: 400;
-  src: local("Sanchez"), local("Sanchez-Regular"), url("http://themes.googleusercontent.com/static/fonts/sanchez/v2/mx466fsxfR1AA3OwUm3waQ.woff") format("woff");
-}
+@import url(http://fonts.googleapis.com/css?family=Sanchez);
 
 * {
   padding: 0;
