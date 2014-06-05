@@ -216,7 +216,7 @@ function game(limit) {
     this.start = function(continent) {
         this.clearup(); //Clear things from previous start
         current_continent = continent;
-        var path = current_continent + '.svg';
+        var path ='svg/'+ current_continent + '.svg';
 
         if ($("#city").prop("checked")) {
             this.type="capital";
