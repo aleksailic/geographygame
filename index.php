@@ -8,7 +8,8 @@
   	<meta name="author" content="Aleksa Ilic">
   	<meta name="description" content="Geography game in which you need to guess positions of wolrd countries on a political map">
  	<title>Geography game</title>
-	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	<link href='//fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	<link href='//fonts.googleapis.com/css?family=Sanchez' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css" media="all" type="text/css" />
     <link rel="stylesheet" href="css/switch.css" media="all" type="text/css" />
     <link rel="stylesheet" href="css/modal.css" media="all" type="text/css" />
