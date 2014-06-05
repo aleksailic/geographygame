@@ -1,0 +1,74 @@
+.modal {
+    position: fixed;
+	
+	width:250px;
+	height:250px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 0 1000em rgba(0,0,0,.5),
+    			2px 2px 3px 0px rgba(0,0,0,0.8);
+    background: #fff;
+    z-index: 300;
+}
+.prevent {
+    pointer-events: none;
+}
+
+.prevent .modal {
+    pointer-events: auto;
+}
+
+#gameover p{
+	font-size:2rem;
+	text-align:center;
+}
+
+#gameover .score{
+	color:#303C44;
+	font-size: 80px;
+	font-size: 8rem;
+	text-transform: uppercase;
+	font-family: 'Sanchez', serif;
+	text-align: center;
+	letter-spacing: 3px;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+
+.modalbtn{
+	color: rgba(255,255,255,1);
+	text-decoration: none;
+	background-color: #45629E;
+	font-family: 'Sanchez', serif;
+	font-weight: 700;
+	font-size: 2.5rem;
+	display: inline-block;
+	padding: 4px;
+	margin:4px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	-webkit-box-shadow: 0px 6px 0px #324873, 0px 9px 8px rgba(0,0,0,.7);
+	   -moz-box-shadow: 0px 6px 0px #324873, 0px 9px 8px rgba(0,0,0,.7);
+	        box-shadow: 0px 6px 0px #324873, 0px 9px 8px rgba(0,0,0,.7);
+	width: 80px;
+	text-align: center;
+	
+	-webkit-transition: all .1s ease;
+	-moz-transition: all .1s ease;
+	-ms-transition: all .1s ease;
+	-o-transition: all .1s ease;
+	transition: all .1s ease;
+
+	border:none;
+	cursor:pointer;
+}
+.modalbtn:active {
+    -webkit-box-shadow: 0px 3px 0px #324873, 0px 3px 6px rgba(0,0,0,.9);
+       -moz-box-shadow: 0px 3px 0px #324873, 0px 3px 6px rgba(0,0,0,.9);
+            box-shadow: 0px 3px 0px #324873, 0px 3px 6px rgba(0,0,0,.9);
+    position: relative;
+    top: 6px;
+}

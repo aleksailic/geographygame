@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="UTF-8">
+  	<meta name="author" content="Aleksa Ilic">
+  	<meta name="description" content="Geography game in which you need to guess positions of wolrd countries on a political map">
+ 	<title>Geography game</title>
+	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css" media="all" type="text/css" />
+    <link rel="stylesheet" href="switch.css" media="all" type="text/css" />
+    <link rel="stylesheet" href="modal.css" media="all" type="text/css" />
+    <script src='jquery.js'></script>
+	<script src="index.js"></script>
+</head>
+
+<body>
+
+<div id="game">
+	<div id="gameover" class="modal">
+		<p>Osvojio si</p>
+		<p class='score'>70%</p>
+		<span class="share" style="text-align:center;display:block;width:100%;">
+			<button class="modalbtn">share</button>
+		</span>
+		<br>
+		<button class="modalbtn">cao</button><button class="modalbtn">cao</button>
+	</div>
+	<div id="menu">
+	  <div class="logo"><img src="http://www.placehold.it/900x150"></div>
+	  <ul class="kontinenti">
+	    <li><img width="180" height="180" data-kontinent="europe" src="img/europe.png"></li>
+	    <li><img class="unavailable" width="180" height="180" data-kontinent="asia2" src="img/asia.png"></li>
+	    <li><img class="unavailable" width="180" height="180" data-kontinent="africa2" src="img/africa.png"></li>
+	    <li><img class="unavailable" width="180" height="180" data-kontinent="usa" src="img/north america.png"></li>
+	  </ul>
+	  <div class="uputstva">Izaberi kontinent</div>
+
+	  <div class="switch switch-right">
+	  	<input type="radio" class="switch-input" name="view" value="country" id="country" checked>
+	  	<label for="country" class="switch-label switch-label-off">Države</label>
+	  	<input type="radio" class="switch-input" name="view" value="city" id="city">
+	  	<label for="city" class="switch-label switch-label-on">Gradovi</label>
+	  	<span class="switch-selection"></span>
+	  </div>
+
+	  <div class="autori">
+	    <p>Programming: <a href="http://www.codepen.io/aleksailic" target="_blank">Aleksa Ilic</a></p>
+	    <p>©2013. Some Rights Reserved. SVG maps are courtesy of <a href="http://d-maps.com/" target="_blank">d-maps</a>
+	  </div>
+	</div>
+
+	<div id="workspace">
+		<div id="map">
+
+		</div>
+		<div id="score">100%</div>
+		<div id="labels">
+			<ul></ul>
+		</div>		
+	</div>
+
+	<div id="menu_btn">Menu</div>
+</div>
+</body>
+
+</html>
