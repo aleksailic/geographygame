@@ -179,7 +179,7 @@ var europe = [{
     "code": "ad",
     "capital":"Andora"
 }];
-var continents = new Array();
+var continents = new Array();   
 continents['europe'] = europe;
 
 var current_selection = null;
@@ -220,6 +220,8 @@ function game(limit) {
 
         if ($("#city").prop("checked")) {
             this.type="capital";
+        }else{
+            this.type="country";
         }
 
         //---Find .svg file of the continent---
